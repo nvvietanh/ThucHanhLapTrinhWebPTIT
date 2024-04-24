@@ -1,9 +1,246 @@
-<!DOCTYPE html>
-<html>
-  <head>
+<!DOCTYPE html> 
+<html lang="en"> 
+  
+<head> 
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>YouTube</title>
+    <link rel="icon" href="icons/YouTube.png"/>
+    <link rel="stylesheet" href="style.css"/>
+</head> 
+  
+<body> 
+    <nav> 
+      <div class="left-section">
+        <img src="" alt=""/>
+        <img src="icons/youtube-logo.svg" title="YouTube Home" alt=""/>
+    </div>
+    <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search"/>
+        <button class="search-button" data-title="Search">
+            <img src="icons/search.svg" alt=""/>
+        </button>
+        <button class="voice-search-button" data-title="Search with your voice">
+            <img src="icons/voice-search-icon.svg" alt=""/>
+        </button>
+    </div>
+    <div class="right-section">
+        <button class="right-section-buttons" data-title="Create">
+            <img src="icons/create.svg" class="upload-icon" alt=""/>
+        </button>
+        <button class="right-section-buttons" data-title="Notifications">
+            <div class="notifications-icon-container">
+                <img src="icons/notifications.svg" class="notifications-icon" data-title="notifications" alt=""/>
+            </div>
+        </button>
+        <img src="Assets/logo/my_channel.jpg" class="channel-me-icon" alt=""/>
+    </div>
+    </nav> 
+    <section id="sidebar-section"> 
+        <div> 
+            <ul class="sidebar"> 
+                <li id="active-title"> 
+                    
+                    <a href="#" class="sidebar-titles active">Home</a> 
+                </li> 
+                <li> 
+                    
+                    <a href="#" class="sidebar-titles">Shorts</a> 
+                </li> 
+                <li> 
+                    
+                    <a href="#" class="sidebar-titles">Subscriptions</a> 
+                </li> 
+            </ul> 
+        </div> 
+        <div> 
+            <ul class="sidebar"> 
+                <li> 
+                    <a href="#" class="sidebar-titles">Library</a> 
+                </li> 
+                <li> 
+                    <a href="#" class="sidebar-titles">History</a> 
+                </li> 
+                <li> 
+                    <a href="#" class="sidebar-titles">Your videos</a> 
+                </li>
+                <li>
+                    <a href="#" class="sidebar-titles">Watch later</a> 
+                </li> 
+                <li> 
+                    <a href="#" class="sidebar-titles">Liked videos</a> 
+                </li> 
+            </ul> 
+        </div> 
+        <div> 
+            <p class="sidebar-heading">Subscriptions</p> 
+            <ul class="sidebar"> 
+                <li> 
+                    <div class="channel-container-sb"> 
+                      <img src= "" class="channel-1">
+                    </div> 
+                    <a href="#" class="sidebar-titles">Subscribed Channel 1</a> 
+                </li> 
+                <li> 
+                    <div class="channel-container-sb"> 
+                      <img src= "" class="channel-1"> 
+                    </div> 
+                    <a href="#" class="sidebar-titles">Subscribed Channel 2</a> 
+                </li> 
+                <li> 
+                    <div class="channel-container-sb"> 
+                      <img src= "" class="channel-1">
+                    </div> 
+                    <a href="#" class="sidebar-titles">Subscribed Channel 3</a> 
+                </li> 
+                <li> 
+                    <div class="channel-container-sb"> 
+                      <img src= "" class="channel-1"> 
+                    </div> 
+                    <a href="#" class="sidebar-titles">Subscribed Channel 4</a> 
+                </li> 
+                
+                <li> 
+                    <div class="channel-container-sb"> 
+                        <img src="" class="channel-1"> 
+                    </div> 
+                    <a href="#" class="sidebar-titles">Subscribed Channel 5</a> 
+                </li> 
+            </ul> 
+        </div> 
+        <div> 
+            <p class="sidebar-heading">More from YouTube</p> 
+            <ul class="sidebar"> 
+                <li> 
+                    
+                    <a href="#" class="sidebar-titles">YouTube Premium</a> 
+                </li> 
+                <li> 
+                    
+                    <a href="#" class="sidebar-titles">YouTube Musics</a> 
+                </li> 
+                <li> 
 
-  </head>
-  <body>
+                    <a href="#" class="sidebar-titles">Youtube Kids</a> 
+                </li> 
+            </ul> 
+        </div> 
+        <div> 
+            <ul class="sidebar"> 
+                <li> 
+                    
+                    <a href="#" class="sidebar-titles">Settings</a> 
+                </li> 
+                <li> 
+                    
+                    <a href="#" class="sidebar-titles">Report history</a> 
+                </li> 
+                <li> 
+                    
+                    <a href="#" class="sidebar-titles">Help</a> 
+                </li> 
+                <li> 
 
-  </body>
+                    <a href="#" class="sidebar-titles">Send feedback</a> 
+                </li> 
+            </ul> 
+        </div> 
+    </section> 
+    <main id="video-section"> 
+        <div class="video-container"> 
+            <img src="" id="image-1" class="images"> 
+            <div class="video-description"> 
+                <div class="channel-container-main"> 
+                    <img src="" class="channel-main"> 
+                </div> 
+                <div class="video-details"> 
+                    <a href="#" class="video-title"> 
+                        Video Title 1 
+                    </a> 
+                    <a href="#" class="channel-name"> 
+                        Youtuber 1 
+                    </a> 
+                    <a href="#"  class="views"> 
+                        1M views 
+                    </a> 
+                    <i class="circle-icon">•</i> 
+                    <a href="#" class="time"> 
+                        1 month ago 
+                    </a> 
+                </div> 
+            </div> 
+        </div> 
+        <div class="video-container"> 
+            <img src="" id="image-2" class="images"> 
+            <div class="video-description"> 
+                <div class="channel-container-main"> 
+                    <img src="" class="channel-main"> 
+                </div> 
+                <div class="video-details"> 
+                    <a href="#" class="video-title"> 
+                        Video Title 2 
+                    </a> 
+                    <a href="#" class="channel-name"> 
+                        Youtuber 2
+                    </a> 
+                    <a href="#" class="views">1K views 
+                      </a> 
+                    <i class="circle-icon">•</i> 
+                    <a href="#" class="time">2 months ago 
+                      </a> 
+                </div> 
+            </div> 
+        </div> 
+        <div class="video-container"> 
+            <img src="" id="image-3" class="images"> 
+            <div class="video-description"> 
+                <div class="channel-container-main"> 
+                    <img src="" class="channel-main"> 
+                </div> 
+                <div class="video-details"> 
+                    <a href="#" class="video-title"> 
+                      Video Title 3 
+                    </a> 
+                    <a href="#" class="channel-name"> 
+                        Youtuber 3
+                    </a> 
+                    <a href="#"  class="views"> 
+                        1M views 
+                    </a> 
+                    <i class="circle-icon">•</i> 
+                    <a href="#"  class="time"> 
+                        1 month ago 
+                    </a> 
+                </div> 
+            </div> 
+        </div> 
+        <div class="video-container"> 
+            <img src="" id="image-4" class="images"> 
+            <div class="video-description"> 
+                <div class="channel-container-main"> 
+                    <img src="" class="channel-main"> 
+                </div> 
+                <div class="video-details"> 
+                    <a href="#" class="video-title"> 
+                        Video Title 4
+                    </a> 
+                    <a href="#" class="channel-name"> 
+                        Youtuber 4 
+                    </a> 
+                    <a href="#" class="views"> 
+                        54K views 
+                    </a> 
+                    <i class="circle-icon">•</i> 
+                    <a href="#" class="time"> 
+                        5 days ago 
+                    </a> 
+                </div> 
+            </div> 
+        </div> 
+    </main> 
+    <footer> 
+        
+    </footer> 
+</body> 
+  
 </html>
