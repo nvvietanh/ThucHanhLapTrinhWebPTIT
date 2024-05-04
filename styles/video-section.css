@@ -11,13 +11,14 @@
 
 .video-container { 
   margin-top: 20px; 
-  margin-bottom: 40px; 
+  margin-bottom: 40px;
 } 
 
 .images { 
   width: 295px; 
   height: 175px; 
-  margin-bottom: 5px; 
+  margin-bottom: 5px;
+  border-radius: 10px;
 } 
 
 .video-description { 
@@ -51,7 +52,7 @@
   font-weight: bold; 
   text-decoration: none; 
   color: black; 
-  margin-bottom: 5px; 
+  margin-bottom: 5px;
 } 
 
 .channel-name { 
@@ -70,13 +71,8 @@
   text-decoration: none; 
 } 
 
-.fa-circle { 
-  color: rgb(99, 95, 94); 
-  font-size: 2px; 
-  transform: translateY(-3px); 
-} 
-
 .time { 
   text-decoration: none; 
   color: rgb(99, 95, 94); 
-} 
+}
+

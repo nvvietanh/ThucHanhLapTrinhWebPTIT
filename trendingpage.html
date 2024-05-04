@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/headers.css"/>
     <link rel="stylesheet" href="styles/sidebar.css"/>
     <link rel="stylesheet" href="styles/video-section.css"/>
+    <link rel="stylesheet" href="styles/trendingpage.css"/>
 </head> 
 
 <body> 
@@ -43,7 +44,7 @@
     <section id="sidebar-section"> 
         <div>
             <ul class="sidebar"> 
-                <li id="active-title"> 
+                <li> 
                     <img src="icons/home.svg">
                     <a href="/homepage.html" class="sidebar-titles active">Home</a> 
                 </li> 
@@ -119,7 +120,7 @@
         <div>
             <p class="sidebar-heading">Explore</p> 
             <ul class="sidebar"> 
-                <li> 
+                <li id="active-title"> 
                     <img src="icons/trending.svg">
                     <a href="/trendingpage.html" class="sidebar-titles">Trending</a> 
                 </li> 
@@ -182,6 +183,36 @@
         </div> 
     </section> 
     <main id="video-section">
+
+        <div class="page-content-containter">
+            <div class="page-header">
+              <div id="page-content-image-containter">
+                <img alt="trending" src="img/youtube-trending.png" class="page-content-image">
+              </div>
+              <div id="page-content-title-container">
+                <h1>
+                  <span>
+                    Trending
+                  </span>
+                </h1>
+              </div>
+            </div>
+            <div class="page-toolbar">
+              <div id="page-toolbar-selected-item" class="page-toolbar-item">
+                Now
+              </div>
+              <div class="page-toolbar-item">
+                Music
+              </div>
+              <div class="page-toolbar-item">
+                Gaming
+              </div>
+              <div class="page-toolbar-item">
+                Movies
+              </div>
+            </div>
+        </div>
+
         <div class="video-container"> 
             <img src="img/video-thumb-1.jpg" id="image-1" class="images"> 
             <div class="video-description"> 

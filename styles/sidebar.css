@@ -12,6 +12,7 @@
 
 #sidebar-section > div { 
   margin-bottom: 30px; 
+  border-bottom: solid 1px rgb(193, 193, 193);
 } 
 
 .sidebar { 
