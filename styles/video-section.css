@@ -12,7 +12,7 @@
 .video-container { 
   margin-top: 20px; 
   margin-bottom: 10px;
-  margin-left: 2px;
+  margin-left: 5px;
 }
 
 .video-thumbnail {
@@ -21,7 +21,7 @@
 }
 
 .images { 
-  width: 295px; 
+  width: 280px; 
   height: 175px; 
   margin-bottom: 5px;
   border-radius: 10px;
@@ -41,7 +41,8 @@
 
 .video-description { 
   display: flex; 
-  flex-direction: row; 
+  flex-direction: row;
+  width: 280px;
 } 
 
 .channel-container-main { 
@@ -60,7 +61,7 @@
 } 
 
 .video-details { 
-  width: 200px; 
+  width: 100%; 
   margin-top: 3px; 
   margin-left: 10px; 
   justify-self: flex-end; 

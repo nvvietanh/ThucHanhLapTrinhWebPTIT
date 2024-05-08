@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="styles/headers.css"/>
     <link rel="stylesheet" href="styles/sidebar.css"/>
     <link rel="stylesheet" href="styles/video-section.css"/>
+    <style>
+        <?php include "styles/style.css" ?>
+        <?php include "styles/headers.css" ?>
+        <?php include "styles/sidebar.css" ?>
+        <?php include "styles/video-section.css" ?>
+    </style>
 </head> 
 
 <body> 
@@ -43,15 +49,15 @@
     <section id="sidebar-section"> 
         <div>
             <ul class="sidebar"> 
-                <li id="active-title"> 
+                <li id="active-title" class="sidebar-item"> 
                     <img src="icons/home.svg">
                     <a href="/index.html" class="sidebar-titles active">Home</a> 
                 </li> 
-                <li> 
+                <li class="sidebar-item"> 
                     <img src="icons/shorts.svg">
                     <a href="#" class="sidebar-titles">Shorts</a> 
                 </li> 
-                <li>
+                <li class="sidebar-item">
                     <img src="icons/subscriptions.svg">
                     <a href="#" class="sidebar-titles">Subscriptions</a> 
                 </li> 
@@ -60,19 +66,19 @@
         <div>
             <p class="sidebar-heading">You</p> 
             <ul class="sidebar"> 
-                <li> 
+                <li class="sidebar-item"> 
                     <img src="icons/history.svg">
                     <a href="#" class="sidebar-titles">History</a> 
                 </li> 
-                <li> 
+                <li class="sidebar-item"> 
                     <img src="icons/playlist.svg">
                     <a href="#" class="sidebar-titles">Playlists</a> 
                 </li>
-                <li>
+                <li class="sidebar-item">
                     <img src="icons/watch-later.svg">
                     <a href="#" class="sidebar-titles">Watch later</a> 
                 </li> 
-                <li> 
+                <li class="sidebar-item"> 
                     <img src="icons/liked-videos.svg
                     ">
                     <a href="#" class="sidebar-titles">Liked videos</a> 
@@ -83,32 +89,32 @@
         <div> 
             <p class="sidebar-heading">Subscriptions</p> 
             <ul class="sidebar"> 
-                <li> 
+                <li class="sidebar-item"> 
                     <div class="channel-container-sb"> 
                       <img src= "" class="channel-1">
                     </div> 
                     <a href="#" class="sidebar-titles">Subscribed Channel 1</a> 
                 </li> 
-                <li> 
+                <li class="sidebar-item"> 
                     <div class="channel-container-sb"> 
                       <img src= "" class="channel-1"> 
                     </div> 
                     <a href="#" class="sidebar-titles">Subscribed Channel 2</a> 
                 </li> 
-                <li> 
+                <li class="sidebar-item"> 
                     <div class="channel-container-sb"> 
                       <img src= "" class="channel-1">
                     </div> 
                     <a href="#" class="sidebar-titles">Subscribed Channel 3</a> 
                 </li> 
-                <li> 
+                <li class="sidebar-item"> 
                     <div class="channel-container-sb"> 
                       <img src= "" class="channel-1"> 
                     </div> 
                     <a href="#" class="sidebar-titles">Subscribed Channel 4</a> 
                 </li> 
                 
-                <li> 
+                <li class="sidebar-item"> 
                     <div class="channel-container-sb"> 
                         <img src="" class="channel-1"> 
                     </div> 
@@ -119,24 +125,24 @@
         <div>
             <p class="sidebar-heading">Explore</p> 
             <ul class="sidebar"> 
-                <li> 
+                <li class="sidebar-item"> 
                     <img src="icons/trending.svg">
                     <a href="/trendingpage.html" class="sidebar-titles">Trending</a> 
                 </li> 
-                <li> 
+                <li class="sidebar-item"> 
                     <!-- <img src="icons/playlist.svg"> -->
                     <a href="#" class="sidebar-titles">Musics</a> 
                 </li>
-                <li>
+                <li class="sidebar-item">
                     <!-- <img src="icons/watch-later.svg"> -->
                     <a href="#" class="sidebar-titles">Gaming</a> 
                 </li> 
-                <li> 
+                <li class="sidebar-item"> 
                     <!-- <img src="icons/liked-videos.svg
                     "> -->
                     <a href="#" class="sidebar-titles">News</a> 
                 </li> 
-                <li> 
+                <li class="sidebar-item"> 
                     <!-- <img src="icons/liked-videos.svg
                     "> -->
                     <a href="#" class="sidebar-titles">Sports</a> 
@@ -146,15 +152,15 @@
         <div> 
             <p class="sidebar-heading">More from YouTube</p> 
             <ul class="sidebar"> 
-                <li> 
+                <li class="sidebar-item"> 
                     
                     <a href="#" class="sidebar-titles">YouTube Premium</a> 
                 </li> 
-                <li> 
+                <li class="sidebar-item"> 
                     
                     <a href="#" class="sidebar-titles">YouTube Musics</a> 
                 </li> 
-                <li> 
+                <li class="sidebar-item"> 
 
                     <a href="#" class="sidebar-titles">Youtube Kids</a> 
                 </li> 
@@ -162,7 +168,7 @@
         </div> 
         <div> 
             <ul class="sidebar"> 
-                <li> 
+                <li class="sidebar-item"> 
                     
                     <a href="#" class="sidebar-titles">Settings</a> 
                 </li> 
@@ -170,19 +176,19 @@
                     
                     <a href="#" class="sidebar-titles">Report history</a> 
                 </li> 
-                <li> 
+                <li class="sidebar-item"> 
                     
                     <a href="#" class="sidebar-titles">Help</a> 
                 </li> 
-                <li> 
+                <li class="sidebar-item">
 
                     <a href="#" class="sidebar-titles">Send feedback</a> 
                 </li> 
             </ul> 
         </div> 
     </section> 
-    <main id="video-section">
-        <div class="video-container"> 
+    <main class="video-section">
+        <!-- <div class="video-container"> 
             <img src="img/video-thumb-1.jpg" id="image-1" class="images"> 
             <div class="video-description"> 
                 <div class="channel-container-main"> 
@@ -271,11 +277,13 @@
                     </a> 
                 </div> 
             </div> 
-        </div> 
+        </div>  -->
     </main> 
     <footer> 
         
     </footer> 
+
+    <script src="script.js"></script>
 </body> 
   
 </html>

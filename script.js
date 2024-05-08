@@ -1,7 +1,7 @@
 const menuBtn = document.querySelector(".hamburger-menu-button");
 const sidebar = document.getElementById("sidebar-section");
 const main = document.querySelector(".video-section");
-const row = document.querySelector(".video-section");
+const vidSection = document.querySelector(".video-section");
 
 const api_key = "AIzaSyB61dCiMiNQ0njfW4uUCORhE2P96oQrMs0";
 const video_url = "https://www.googleapis.com/youtube/v3/videos?";
@@ -31,7 +31,7 @@ async function getVideo() {
       part: 'snippet, statistics, contentDetails',
       chart: 'mostPopular',
       maxResults: 50,
-      regionCode: 'TR'
+      regionCode: 'VN'
   }));
 
 
@@ -166,7 +166,7 @@ function createVideo(data) {
       />
       <span class="video-time">${data.contentDetails.duration}</span>
     </div>
-    <div class="video_description">
+    <div class="video-description">
       <div class="channel-container-main">
         <img src="${data.snippet.channelLogo}" alt="${data.snippet.title}" class="channel-main"/>
       </div>
@@ -190,7 +190,7 @@ function createVideo(data) {
   videoGroup.classList.add("video__group");
   videoGroup.innerHTML += video;
 
-  row.appendChild(videoGroup);
+  vidSection.appendChild(videoGroup);
 
 }
 
