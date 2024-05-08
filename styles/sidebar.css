@@ -26,13 +26,20 @@
 
 .sidebar > li { 
   list-style-type: none; 
-  margin-bottom: 20px; 
+  /* margin-bottom: 20px;  */
   position: relative; 
+  display: flex;
   box-sizing: border-box; 
   width: calc(250px - 20px); 
   padding-left: 20px; 
-  height: 25px; 
-} 
+  height: 40px;
+  align-items: center;
+}
+
+
+.sidebar-item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
 
 .sidebar-titles { 
   text-decoration: none; 

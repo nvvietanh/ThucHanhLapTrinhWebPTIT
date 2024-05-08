@@ -1,9 +1,9 @@
-#video-section { 
+.video-section { 
   margin: 20px 5px 0 5px; 
   display: flex; 
   flex-direction: row; 
   flex-wrap: wrap; 
-  justify-content: space-around; 
+  justify-content: flex-start; 
   margin-left: 255px; 
   margin-top: 60px; 
   padding-top: 20px; 
@@ -11,15 +11,33 @@
 
 .video-container { 
   margin-top: 20px; 
-  margin-bottom: 40px;
-} 
+  margin-bottom: 10px;
+  margin-left: 2px;
+}
+
+.video-thumbnail {
+  display: flex;
+  position: relative;
+}
 
 .images { 
   width: 295px; 
   height: 175px; 
   margin-bottom: 5px;
   border-radius: 10px;
-} 
+}
+
+.video-time {
+  position: absolute;
+  bottom: 4px;
+  right: 2px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 3px 4px;
+  margin: 4px;
+  border-image: 2px;
+  font-size: 1rem;
+}
 
 .video-description { 
   display: flex; 
